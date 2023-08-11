@@ -1,4 +1,4 @@
-package com.example.FreePark.dto;
+package com.FreePark.dto;
 
 public class ParkingDTO {
     private int id;

@@ -1,6 +1,6 @@
-package com.example.FreePark.service;
+package com.FreePark.service;
 
-import com.example.FreePark.dto.ParkingDTO;
+import com.FreePark.dto.ParkingDTO;
 
 import java.util.List;
 

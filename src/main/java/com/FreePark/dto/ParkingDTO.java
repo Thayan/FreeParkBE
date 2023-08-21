@@ -1,5 +1,7 @@
 package com.FreePark.dto;
 
+import java.sql.Time;
+
 public class ParkingDTO {
     private int id;
     private String roadName;
@@ -7,10 +9,10 @@ public class ParkingDTO {
     private double longitude;
     private double latitude;
     private float costPerHour;
-    private String freeAfter;
-    private String payFrom;
+    private Time freeAfter;
+    private Time payFrom;
 
-    public ParkingDTO(int id, String roadName, String roadSuffix, double longitude, double latitude, float costPerHour, String freeAfter, String payFrom){
+    public ParkingDTO(int id, String roadName, String roadSuffix, double longitude, double latitude, float costPerHour, Time freeAfter, Time payFrom){
         this.id = id;
         this.roadName = roadName;
         this.roadSuffix = roadSuffix;
@@ -69,19 +71,19 @@ public class ParkingDTO {
         this.costPerHour = costPerHour;
     }
 
-    public String getFreeAfter() {
+    public Time getFreeAfter() {
         return this.freeAfter;
     }
 
-    public void setFreeAfter(String freeAfter) {
+    public void setFreeAfter(Time freeAfter) {
         this.freeAfter = freeAfter;
     }
 
-    public String getPayFrom() {
+    public Time getPayFrom() {
         return this.payFrom;
     }
 
-    public void setPayFrom(String payFrom) {
+    public void setPayFrom(Time payFrom) {
         this.payFrom = payFrom;
     }
 }
